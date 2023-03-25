@@ -50,9 +50,10 @@
 .services .icon i {
   font-size: 48px;
   line-height: 1;
-  color:  #e4485f;
+  color:  green;
   transition: all 0.3s ease-in-out;
 }
+
 
 .services .title {
   font-weight: 700;
