@@ -7,6 +7,8 @@ def home(request):
     return render(request,'accounts/home.html')
 def about(request):
     return render(request,'accounts/about.html')
+def usermain(request):
+    return render(request,'accounts/usermain.html')
 """
 def user_data(request):
     if(request.method=='POST'):
