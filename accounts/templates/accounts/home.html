@@ -70,7 +70,8 @@
 
 
 
-      <form method="POST">
+      <form method="post" action="{% url  'user_data'%}">
+        {% csrf_token%}
         <div class="form-body">
           <div class="row">
               <div class="form-holder">
@@ -84,7 +85,7 @@
                               <input class="form-control" type="number" name="height" placeholder="Height in cm" required>                           </div>
 
                            <div class="col-md-12 divweight">
-                            <input class="form-control" type="number" name="wight" placeholder="Weight in kg" required>
+                            <input class="form-control" type="number" name="weight" placeholder="Weight in kg" required>
                          </div>
 
 
@@ -118,27 +119,35 @@
   
                              <div class="col-md-12 mt-5 divgender">
                               <label class="mb-3 mr-1 gend" for="gender">Gender: </label>
-  
-                              <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                          
+                              <input type="radio" class="btn-check" name="gender" id="male" value="male" autocomplete="off" required>
                               <label class="btn btn-md btn-outline-secondary" for="male">Male</label>
-  
-                              <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                          
+                              <input type="radio" class="btn-check" name="gender" id="female" value="female" autocomplete="off" required>
                               <label class="btn btn-md btn-outline-secondary" for="female">Female</label>
-  
-                              <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
-                              <label class="btn btn-md btn-outline-secondary" for="secret">Other</label>
-                              </div>
+                          
+                              <input type="radio" class="btn-check" name="gender" id="secret" value="other" autocomplete="off" required>
+                              <label class="btn btn-md btn-outline-secondary" for="other">Other</label>
+                          </div>
+                          
 
                     
   
                               <div class="form-button  text-center">
                                 <p class="mainbtn ">
-                                  <button type="button" class="btn-lg btn2">
+                                  <button id="submit" type="submit"  class="btn-lg btn">
                                     <a href="#get_started" style="text-decoration: none; color: black;">
                                        Calculate BMI
                                   </a>
                                </button>
-                                </p>                               </div>
+                                </p>                         
+                                    </div>
+
+
+
+
+
+
                           </form>
                       </div>
                   </div>

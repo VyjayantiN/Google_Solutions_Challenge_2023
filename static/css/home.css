@@ -548,18 +548,17 @@ padding-right :15%;
 }
 
 
-.btn-primary{
-    background-color: #6C757D;
-    outline: none;
-    border: 0px;
-     box-shadow: none;
+.btn2:hover{
+  margin-left:10px;
+  margin-right: 10px;
+  color: #187498;
+  background-color: #e4485f;
+  border: none;
 }
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-    background-color: #495056;
-    outline: none !important;
-    border: none !important;
-     box-shadow: none;
+.btn2{
+background-color: #e4485f;
+color: white;
+border: none;
 }
 
 .form-content textarea {
