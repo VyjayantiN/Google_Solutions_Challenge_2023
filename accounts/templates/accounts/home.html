@@ -70,7 +70,7 @@
 
 
 
-      <form method="post" action="{% url  'user_data'%}">
+      <form method="post" >
         {% csrf_token%}
         <div class="form-body">
           <div class="row">
@@ -97,24 +97,25 @@
 
 
   
-                            <div class="col-md-12">
-                              <select class="form-select mt-3" required>
-                                    <option selected disabled value="">Age</option>
-                                    <option value="jweb">6mnths-1year</option>
-                                    <option value="jweb">1year-2years</option>
-                                    <option value="jweb">2years-3years</option>
-                                    <option value="jweb">3years-4years</option>
-                                    <option value="jweb">4years-5years</option>
-                             </select>
-                         </div>
+                         <div class="col-md-12">
+                          <select class="form-select mt-3" name="age" required>
+                              <option selected disabled value="">Age</option>
+                              <option value="6m-1y">6mnths-1year</option>
+                              <option value="1y-2y">1year-2years</option>
+                              <option value="2y-3y">2years-3years</option>
+                              <option value="3y-4y">3years-4years</option>
+                              <option value="4y-5y">4years-5years</option>
+                          </select>
+                      </div>
+                      
   
-  
-                             <div class="col-md-12 districtdiv">
-                                  <select class="form-select mt-3" required>
-                                        <option selected disabled value="">District</option>
-                                        <option value="jweb">Nandur,MH</option>
-                                 </select>
-                             </div>
+                         <div class="col-md-12 districtdiv">
+                          <select class="form-select mt-3" name="district" required>
+                              <option selected disabled value="">District</option>
+                              <option value="nandur">Nandur, MH</option>
+                          </select>
+                      </div>
+                      
   
   
                              <div class="col-md-12 mt-5 divgender">
