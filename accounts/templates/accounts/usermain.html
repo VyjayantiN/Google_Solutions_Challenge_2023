@@ -61,18 +61,21 @@
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
+                  {% for object_1 in object_1 %}
+                 <h2>{{ object_1.name }}</h2>
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                
                  
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img src="{{ object_1.image.url }}" alt="{{ object_1.name }}" class="card-img-top">
+
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Item-Name</h5>
+                                    <h5 class="fw-bolder">{{object_1.name}}</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -89,60 +92,9 @@
                             </div>
                         </div>
                     </div>
-             
-                    <div class="col mb-5">
-                      <div class="card h-100">
-                          <!-- Product image-->
-                          <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                          <!-- Product details-->
-                          <div class="card-body p-4">
-                              <div class="text-center">
-                                  <!-- Product name-->
-                                  <h5 class="fw-bolder">Item-Name</h5>
-                                  <!-- Product reviews-->
-                                  <div class="d-flex justify-content-center small text-warning mb-2">
-                                      <div class="bi-star-fill"></div>
-                                      <div class="bi-star-fill"></div>
-                                      <div class="bi-star-fill"></div>
-                                      <div class="bi-star-fill"></div>
-                                     
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- Product actions-->
-                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">See Steps</a></div>
-                          </div>
-                      </div>
-                  </div>
-
-                        <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Item-Name</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="items_home.html">See Steps</a></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                {% endfor %}
+
             </div>
         </section>
         <!-- Footer-->
