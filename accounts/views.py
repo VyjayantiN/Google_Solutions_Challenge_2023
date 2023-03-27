@@ -6,7 +6,7 @@ from django.http import HttpResponse
 def home(request):
     return render(request,'accounts/home2.html')
 def about(request):
-    return render(request,'accounts/about.html')
+    return render(request,'accounts/about2.html')
 def usermain(request):
     return render(request,'accounts/usermain.html')
 def items_home(request):
