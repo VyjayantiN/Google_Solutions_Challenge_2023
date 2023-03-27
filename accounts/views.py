@@ -4,7 +4,7 @@ from django.http import HttpResponse
 #from .models import Person
 # Create your views here.
 def home(request):
-    return render(request,'accounts/home.html')
+    return render(request,'accounts/home2.html')
 def about(request):
     return render(request,'accounts/about.html')
 def usermain(request):
