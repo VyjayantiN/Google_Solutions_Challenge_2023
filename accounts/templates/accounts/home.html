@@ -70,7 +70,7 @@
 
 
 
-      <form method="post" >
+      <form method="post" action="{% url 'usermain' %}" >
         {% csrf_token%}
         <div class="form-body">
           <div class="row">
@@ -137,9 +137,7 @@
                               <div class="form-button  text-center">
                                 <p class="mainbtn ">
                                   <button id="submit" type="submit"  class="btn-lg btn">
-                                    <a href="usermain.html" style="text-decoration: none; color: black;">
-                                       Calculate BMI
-                                  </a>
+                                    Calculate BMI
                                </button>
                                 </p>                         
                                     </div>
