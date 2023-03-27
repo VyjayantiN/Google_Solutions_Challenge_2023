@@ -176,7 +176,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 bg-white p-5">
-                        <form method="post" >
+                        <form method="post" action="{% url 'usermain' %}">
                             {% csrf_token%}
                             <div class="form-body">
                             <div class="row g-3">
@@ -223,7 +223,7 @@
                                         <label for="gender">Gender</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 form-button">
                                     <button class="btn btn-primary px-5" style="height: 60px;">
                                         Check Now
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">

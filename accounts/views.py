@@ -19,12 +19,12 @@ def usermain(request):
         if gender.lower() == "male":
             if bmi < 18.5:
                 category = "underweight"
-            else 18.5 <= bmi < 25:
+            else:
                 category = "healthy"
         elif gender.lower() == "female":
             if bmi < 18.5:
                 category = "Underweight"
-            else 18.5 <= bmi < 24:
+            else:
                 category = "Normal weight"
         else:
             category = "Unknown gender"
