@@ -19,7 +19,8 @@ def usermain(request):
         gender=request.POST['gender']
         category=""
         print(request.POST)
-        bmi = int(weight) / int(height) ** 2
+        bmi = int(weight) / ((int(height)/100) ** 2)
+        print(bmi)
         if gender.lower() == "male":
             if bmi < 18.5:
                 category = "underweight"
@@ -29,13 +30,15 @@ def usermain(request):
             if bmi < 18.5:
                 category = "Underweight"
             else:
-                category = "Normal weight"
+                category = "healthy"
         else:
             category = "Unknown gender"
-        object_1=recipe.objects.all()
-        object_2=gen_ins.objects.all()
+        object_1=recipe.objects.filter(age=age)
+        object_2=gen_ins.objects.filter(age=age)
         print(object_1)
-        return render(request,'accounts/usermain.html',{'obj1':object_1,'category':category})
+        print(category)
+        for obj in object_2:
+            return render(request,'accounts/usermain.html',{'obj1':object_1,'instructions':obj.instructions,'food_items':obj.food_items,'mal_instructions':obj.mal_ins,'category':category})
 def items_home(request):
     return render(request,'accounts/items_home.html')
 """

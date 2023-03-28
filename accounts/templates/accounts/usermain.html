@@ -21,9 +21,7 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Your BMI Category is </h1>
-                    <p class="lead fw-normal text-white-50 mb-0">
-                        {{ category }}
-                    </p>
+                    <h1 class="display-4 fw-bolder">{{ category }} </h1>
                 </div>
             </div>
         </header>
@@ -35,7 +33,26 @@
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Recommended Food Items : </h1>
                     <p class="lead fw-normal text-dark-50 mb-0">
-                      <!--{{ obj2.food_items }}-->
+                      {{ food_items }}
+                    </p>
+
+                </div>
+            </div>
+            <div class="container px-4 px-lg-5 my-5 bg-warning">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">General Instructions:  </h1>
+                    <p class="lead fw-normal text-dark-50 mb-0">
+                      {{ instructions }}
+                    </p>
+
+                </div>
+            </div>
+            <div class="container px-4 px-lg-5 my-5 bg-warning">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Foods to be eaten in higher quantities for the underweight category:
+                    </h1>
+                    <p class="lead fw-normal text-dark-50 mb-0">
+                      {{ mal_instructions }}
                     </p>
 
                 </div>
@@ -43,16 +60,14 @@
 
 
 
-
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                     {% for o1 in obj1 %}
-                 <h2>{{ o1.recipe_name }}</h2> <h2>{{ ol.image.url }}</h2>
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="row  row-cols-6  justify-content-center">
                
                  
-                    <div class="col mb-5">
+                    <div class="col-6 mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
                             <img src="{% static 'images/'|add:o1.recipe_name|add:'.png' %}" alt="" class="card-img-top">

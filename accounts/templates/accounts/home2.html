@@ -184,12 +184,18 @@
                                     <div class="form-content">
                                         <div class="form-items">
                                
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="number" class="form-control bg-light border-0" id="age" name="age" placeholder="Child's Age in years">
-                                        <label for="age">Child's Age in years</label>
-                                    </div>
-                                </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <select class="form-select bg-light border-0" id="age" name="age" required>
+                                                        <option selected disabled value="">Age</option>
+                                                        <option value="6mnths-1year">6mnths-1year</option>
+                                                        <option value="1year-2years">1year-2years</option>
+                                                        <option value="2years-4years">2years-4years</option>
+                                                        <option value="4years-5years">4years-5years</option>
+                                                    </select>
+                                                    <label for="age">Age</label>
+                                                </div>
+                                            </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="number" class="form-control bg-light border-0" id="height" name="height" placeholder="Child's height in cm">
@@ -215,7 +221,7 @@
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <select class="form-select bg-light border-0" id="age" name="gender" required>
-                                            <option selected disabled value="">District</option>
+                                            <option selected disabled value="">Gender</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                             <option value="other">Other</option>
