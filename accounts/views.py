@@ -4,17 +4,21 @@ from django.http import HttpResponse
 from .models import recipe,gen_ins
 # Create your views here.
 def home(request):
+    print('*****')
     return render(request,'accounts/home2.html')
 def about(request):
     return render(request,'accounts/about2.html')
 def usermain(request):
+    print('*')
     if request.method=='POST':
+        
         height=request.POST['height']
         weight=request.POST['weight']
         age=request.POST['age']
         district=request.POST['district']
         gender=request.POST['gender']
         category=""
+        print(request.POST)
         bmi = int(weight) / int(height) ** 2
         if gender.lower() == "male":
             if bmi < 18.5:
@@ -28,9 +32,10 @@ def usermain(request):
                 category = "Normal weight"
         else:
             category = "Unknown gender"
-        object_1=recipe.objects.filter(age=age,category=category)
-        object_2=gen_ins.objects.filter(age=age)
-        return render(request,'accounts/usermain.html',{'object_1':object_1,'object_2':object_2})
+        object_1=recipe.objects.all()
+        object_2=gen_ins.objects.all()
+        print(object_1)
+        return render(request,'accounts/usermain.html',{'obj1':object_1,'category':category})
 def items_home(request):
     return render(request,'accounts/items_home.html')
 """
