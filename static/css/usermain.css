@@ -11286,3 +11286,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.ourcard {
+  padding: 2rem;
+ 
+}
+.ourcard:hover {
+background-color: #fafafa;
+padding: 2rem;
+
+}
+
+header{
+background: linear-gradient(-225deg, #fa65ad 0%, #8d3b91 50%, #473572 100%); 
+}
+.inst{
+background-color: #ffe6ff; 
+
+}
+.repsec{
+background-color: #ebe9f0;
+}
+.recip{
+font-family: 'Vollkorn', serif;
+color: #f23aab;
+}
