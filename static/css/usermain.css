@@ -6299,7 +6299,14 @@ textarea.form-control-lg {
 .offcanvas-backdrop.show {
   opacity: 0.5;
 }
-
+#page-divider {
+  border-top: 1px solid #000; /* Example: creates a horizontal line */
+  /* Additional styling properties */
+}
+#page-divider {
+  border-top: 1px solid #000; /* Example: creates a horizontal line */
+  width: 100%;
+}
 .offcanvas-header {
   display: flex;
   align-items: center;
