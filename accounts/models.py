@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class recipe(models.Model):
     recipe_name=models.CharField(max_length=100,null=True)
     in_1=models.CharField(max_length=15,null=True)

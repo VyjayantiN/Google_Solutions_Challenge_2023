@@ -12,7 +12,6 @@ def about(request):
     return render(request,'accounts/about2.html')
 def usermain(request):
     if request.method=='POST':
-        
         height=request.POST['height']
         weight=request.POST['weight']
         age=request.POST['age']
@@ -24,14 +23,14 @@ def usermain(request):
         print(bmi)
         if gender.lower() == "male":
             if bmi < 18.5:
-                category = "underweight"
+                category = "Underweight"
             else:
-                category = "healthy"
+                category = "Healthy"
         elif gender.lower() == "female":
             if bmi < 18.5:
                 category = "Underweight"
             else:
-                category = "healthy"
+                category = "Healthy"
         else:
             category = "Unknown gender"
         object_1=recipe.objects.filter(age=age)

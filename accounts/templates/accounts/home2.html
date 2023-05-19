@@ -10,7 +10,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="static/img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="static/images/food bowl.png" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +46,15 @@
         .Statistics{
             background-color: #fcfcfc;
         }
+        button.calculatebutton#submit {
+        background-color: #ff0f87 /* Primary color */
+        color: #fff; /* Text color */
+    }
+
+    /* Prevent color change on hover */
+    button.calculatebutton#submit:hover {
+        background-color: #ff0f87 !important;
+    }
     </style>
 </head>
 
@@ -236,10 +245,45 @@
                                 <div class="col-12 p-2">
                                     <div class="form-floating">
                                         <select class="form-select bg-light border-0" id="district" name="district" required>
-                                            <option selected disabled value="">District</option>
-                                            <option value="nandur">Nandur, MH</option>
+                                            <option selected disabled value="">State</option>
+                                            <option value="andhra pradesh">Andhra Pradesh</option>
+                                            <option value="arunachal pradesh">Arunachal Pradesh</option>
+                                            <option value="assam">Assam</option>
+                                            <option value="bihar">Bihar</option>
+                                            <option value="chhattisgarh">Chhattisgarh</option>
+                                            <option value="goa">Goa</option>
+                                            <option value="gujarat">Gujarat</option>
+                                            <option value="haryana">Haryana</option>
+                                            <option value="himachal pradesh">Himachal Pradesh</option>
+                                            <option value="jammu and kashmir">Jammu and Kashmir</option>
+                                            <option value="jharkhand">Jharkhand</option>
+                                            <option value="karnataka">Karnataka</option>
+                                            <option value="kerala">Kerala</option>
+                                            <option value="madhya pradesh">Madhya Pradesh</option>
+                                            <option value="maharashtra">Maharashtra</option>
+                                            <option value="manipur">Manipur</option>
+                                            <option value="meghalaya">Meghalaya</option>
+                                            <option value="mizoram">Mizoram</option>
+                                            <option value="nagaland">Nagaland</option>
+                                            <option value="odisha">Odisha</option>
+                                            <option value="punjab">Punjab</option>
+                                            <option value="rajasthan">Rajasthan</option>
+                                            <option value="sikkim">Sikkim</option>
+                                            <option value="tamil nadu">Tamil Nadu</option>
+                                            <option value="telangana">Telangana</option>
+                                            <option value="tripura">Tripura</option>
+                                            <option value="uttar pradesh">Uttar Pradesh</option>
+                                            <option value="uttarakhand">Uttarakhand</option>
+                                            <option value="west bengal">West Bengal</option>
+                                            <option value="andaman and nicobar islands">Andaman and Nicobar Islands</option>
+                                            <option value="chandigarh">Chandigarh</option>
+                                            <option value="dadra and nagar haveli and daman and diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                            <option value="delhi">Delhi</option>
+                                            <option value="lakshadweep">Lakshadweep</option>
+                                            <option value="puducherry">Puducherry</option>
+                                                                                        
                                         </select>
-                                        <label for="district">District</label>
+                                        <label for="district">State</label>
                                     </div>
                                 </div>
                               
