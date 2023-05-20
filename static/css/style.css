@@ -259,12 +259,7 @@
     color: var(--primary);
     border-color: var(--primary);
 }
-.calculatebutton:hover{
-background-color: aqua;
-}
-.calculatebutton:active{
-    background-color: #ff0f87;
-}
+
 
 /*** Team ***/
 .team-item img {

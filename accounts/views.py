@@ -10,6 +10,8 @@ def home(request):
     return render(request,'accounts/home2.html')
 def about(request):
     return render(request,'accounts/about2.html')
+def features(request):
+    return render(request,'accounts/features.html')
 def usermain(request):
     if request.method=='POST':
         height=request.POST['height']
@@ -37,6 +39,15 @@ def usermain(request):
         object_2=gen_ins.objects.filter(age=age)
         for obj in object_2:
             return render(request,'accounts/usermain.html',{'obj1':object_1,'instructions':obj.instructions,'food_items':obj.food_items,'mal_instructions':obj.mal_ins,'category':category})
+
+
+
+
+
+
+
+
+
 def items_home(request):
     my_data = request.GET.get('data', '')
     object_1=recipe.objects.filter(recipe_name=my_data)
