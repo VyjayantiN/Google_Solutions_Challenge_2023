@@ -47,8 +47,8 @@
             background-color: #fcfcfc;
         }
         button.calculatebutton#submit {
-        background-color: #ff0f87 /* Primary color */
-        color: #fff; /* Text color */
+        background-color: #ff0f87 ;/* Primary color */
+        color:#fff;
     }
 
     /* Prevent color change on hover */
@@ -82,6 +82,7 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="/" class="nav-item nav-link active">Home</a>
                     <a href="about" class="nav-item nav-link">About</a>
+                    <a href="features" class="nav-item nav-link">Features</a>
                     <a href="#checkbmi" class="nav-item nav-link">Get Started</a>
                 </div>
             </div>
@@ -197,7 +198,7 @@
     <div class="container-fluid donate  py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg" id="checkbmi">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-6 text-white mb-5">
                         BMI Check and Personalized Diet Plans for Optimal Health
                     </h1>
@@ -208,115 +209,212 @@
                         nutritional guidance for a balanced lifestyle.
                         </p>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="h-100 bg-white p-5">
-                        <form method="post" action="{% url 'usermain' %}">
-                            {% csrf_token%}
-                            <div class="form-body">
-                            <div class="row g-3">
-                                <div class="form-holder">
-                                    <div class="form-content">
-                                        <div class="form-items">
-                               
-                                            <div class="col-12 p-2">
-                                                <div class="form-floating">
-                                                    <select class="form-select bg-light border-0" id="age" name="age" required>
-                                                        <option selected disabled value="">Age</option>
-                                                        <option value="6mnths-1year">6mnths-1year</option>
-                                                        <option value="1year-2years">1year-2years</option>
-                                                        <option value="2years-4years">2years-4years</option>
-                                                        <option value="4years-5years">4years-5years</option>
-                                                    </select>
-                                                    <label for="age">Age</label>
-                                                </div>
+               
+            </div>
+            <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="h-100 bg-white p-5">
+                    <form method="post" action="{% url 'usermain' %}">
+                        {% csrf_token%}
+                        <div class="form-body">
+                        <div class="row g-3">
+                            <div class="form-holder">
+                                <div class="form-content">
+                                    <div class="form-items">
+                           
+                                        <div class="col-12 p-2">
+                                            <div class="form-floating">
+                                                <select class="form-select bg-light border-0" id="age" name="age" required>
+                                                    <option selected disabled value="">Age</option>
+                                                    <option value="6mnths-1year">6mnths-1year</option>
+                                                    <option value="1year-2years">1year-2years</option>
+                                                    <option value="2years-4years">2years-4years</option>
+                                                    <option value="4years-5years">4years-5years</option>
+                                                </select>
+                                                <label for="age">Age</label>
                                             </div>
-                                <div class="col-12 p-2">
-                                    <div class="form-floating">
-                                        <input type="number" class="form-control bg-light border-0" id="height" name="height" placeholder="Child's height in cm">
-                                        <label for="height">Child's height in cm</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 p-2">
-                                    <div class="form-floating">
-                                        <input type="number" class="form-control bg-light border-0" id="weight" name="weight" placeholder="Child's weight in kg">
-                                        <label for="weight">Child's weight in kg</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 p-2">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-light border-0" id="district" name="district" required>
-                                            <option selected disabled value="">State</option>
-                                            <option value="andhra pradesh">Andhra Pradesh</option>
-                                            <option value="arunachal pradesh">Arunachal Pradesh</option>
-                                            <option value="assam">Assam</option>
-                                            <option value="bihar">Bihar</option>
-                                            <option value="chhattisgarh">Chhattisgarh</option>
-                                            <option value="goa">Goa</option>
-                                            <option value="gujarat">Gujarat</option>
-                                            <option value="haryana">Haryana</option>
-                                            <option value="himachal pradesh">Himachal Pradesh</option>
-                                            <option value="jammu and kashmir">Jammu and Kashmir</option>
-                                            <option value="jharkhand">Jharkhand</option>
-                                            <option value="karnataka">Karnataka</option>
-                                            <option value="kerala">Kerala</option>
-                                            <option value="madhya pradesh">Madhya Pradesh</option>
-                                            <option value="maharashtra">Maharashtra</option>
-                                            <option value="manipur">Manipur</option>
-                                            <option value="meghalaya">Meghalaya</option>
-                                            <option value="mizoram">Mizoram</option>
-                                            <option value="nagaland">Nagaland</option>
-                                            <option value="odisha">Odisha</option>
-                                            <option value="punjab">Punjab</option>
-                                            <option value="rajasthan">Rajasthan</option>
-                                            <option value="sikkim">Sikkim</option>
-                                            <option value="tamil nadu">Tamil Nadu</option>
-                                            <option value="telangana">Telangana</option>
-                                            <option value="tripura">Tripura</option>
-                                            <option value="uttar pradesh">Uttar Pradesh</option>
-                                            <option value="uttarakhand">Uttarakhand</option>
-                                            <option value="west bengal">West Bengal</option>
-                                            <option value="andaman and nicobar islands">Andaman and Nicobar Islands</option>
-                                            <option value="chandigarh">Chandigarh</option>
-                                            <option value="dadra and nagar haveli and daman and diu">Dadra and Nagar Haveli and Daman and Diu</option>
-                                            <option value="delhi">Delhi</option>
-                                            <option value="lakshadweep">Lakshadweep</option>
-                                            <option value="puducherry">Puducherry</option>
-                                                                                        
-                                        </select>
-                                        <label for="district">State</label>
-                                    </div>
-                                </div>
-                              
-                                <div class="col-12 p-2">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-light border-0" id="age" name="gender" required>
-                                            <option selected disabled value="">Gender</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                            <option value="other">Other</option>
-                                        </select>
-                                        <label for="gender">Gender</label>
-                                    </div>
-                                </div>
-                                <div class="form-button  text-center">
-                                    <p class="mainbtn ">
-                                      <button id="submit" type="submit"  class="btn-lg btn-primary calculatebutton">
-                                        Calculate BMI
-                                   </button>
-                                    </p>                         
                                         </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control bg-light border-0" id="height" name="height" placeholder="Child's height in cm">
+                                    <label for="height">Child's height in cm</label>
+                                </div>
+                            </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control bg-light border-0" id="weight" name="weight" placeholder="Child's weight in kg">
+                                    <label for="weight">Child's weight in kg</label>
+                                </div>
+                            </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <select class="form-select bg-light border-0" id="district" name="district" required>
+                                        <option selected disabled value="">State</option>
+                                        <option value="andhra pradesh">Andhra Pradesh</option>
+                                        <option value="arunachal pradesh">Arunachal Pradesh</option>
+                                        <option value="assam">Assam</option>
+                                        <option value="bihar">Bihar</option>
+                                        <option value="chhattisgarh">Chhattisgarh</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="gujarat">Gujarat</option>
+                                        <option value="haryana">Haryana</option>
+                                        <option value="himachal pradesh">Himachal Pradesh</option>
+                                        <option value="jammu and kashmir">Jammu and Kashmir</option>
+                                        <option value="jharkhand">Jharkhand</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="madhya pradesh">Madhya Pradesh</option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="manipur">Manipur</option>
+                                        <option value="meghalaya">Meghalaya</option>
+                                        <option value="mizoram">Mizoram</option>
+                                        <option value="nagaland">Nagaland</option>
+                                        <option value="odisha">Odisha</option>
+                                        <option value="punjab">Punjab</option>
+                                        <option value="rajasthan">Rajasthan</option>
+                                        <option value="sikkim">Sikkim</option>
+                                        <option value="tamil nadu">Tamil Nadu</option>
+                                        <option value="telangana">Telangana</option>
+                                        <option value="tripura">Tripura</option>
+                                        <option value="uttar pradesh">Uttar Pradesh</option>
+                                        <option value="uttarakhand">Uttarakhand</option>
+                                        <option value="west bengal">West Bengal</option>
+                                        <option value="andaman and nicobar islands">Andaman and Nicobar Islands</option>
+                                        <option value="chandigarh">Chandigarh</option>
+                                        <option value="dadra and nagar haveli and daman and diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="lakshadweep">Lakshadweep</option>
+                                        <option value="puducherry">Puducherry</option>
+                                                                                    
+                                    </select>
+                                    <label for="district">State</label>
+                                </div>
+                            </div>
+                          
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <select class="form-select bg-light border-0" id="age" name="gender" required>
+                                        <option selected disabled value="">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <label for="gender">Gender</label>
+                                </div>
+                            </div>
+                            <div class="form-button  text-center">
+                                <p class="mainbtn ">
+                                  <button id="submit" type="submit"  class="btn-lg btn-primary calculatebutton">
+                                    Calculate BMI
+                               </button>
+                                </p>                         
+                                    </div>
 
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn p-5 " data-wow-delay="0.5s">
+                <div class="h-100 bg-white p-5">
+                    <form method="post" action="{% url 'mother' %}">
+                        {% csrf_token%}
+                        <div class="form-body">
+                        <div class="row g-3">
+                            <div class="form-holder">
+                                <div class="form-content">
+                                    <div class="form-items">
+                           
+                                        <div class="col-12 p-2">
+                                            <div class="form-floating">
+                                                <select class="form-select bg-light border-0" id="age" name="age" required>
+                                                    <option selected disabled value="">Age</option>
+                                                    <option value="6mnths-2years">6mnths-2years</option>
+                                                    <option value="3years-5years">3years-5years</option>
+                                                </select>
+                                                <label for="age">Age</label>
+                                            </div>
+                                        </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control bg-light border-0" id="height" name="height" placeholder="Child's height in cm">
+                                    <label for="height">Mother's height in cm</label>
+                                </div>
                             </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control bg-light border-0" id="weight" name="weight" placeholder="Child's weight in kg">
+                                    <label for="weight">Mother's weight in kg</label>
+                                </div>
                             </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <select class="form-select bg-light border-0" id="district" name="district" required>
+                                        <option selected disabled value="">State</option>
+                                        <option value="andhra pradesh">Andhra Pradesh</option>
+                                        <option value="arunachal pradesh">Arunachal Pradesh</option>
+                                        <option value="assam">Assam</option>
+                                        <option value="bihar">Bihar</option>
+                                        <option value="chhattisgarh">Chhattisgarh</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="gujarat">Gujarat</option>
+                                        <option value="haryana">Haryana</option>
+                                        <option value="himachal pradesh">Himachal Pradesh</option>
+                                        <option value="jammu and kashmir">Jammu and Kashmir</option>
+                                        <option value="jharkhand">Jharkhand</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="madhya pradesh">Madhya Pradesh</option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="manipur">Manipur</option>
+                                        <option value="meghalaya">Meghalaya</option>
+                                        <option value="mizoram">Mizoram</option>
+                                        <option value="nagaland">Nagaland</option>
+                                        <option value="odisha">Odisha</option>
+                                        <option value="punjab">Punjab</option>
+                                        <option value="rajasthan">Rajasthan</option>
+                                        <option value="sikkim">Sikkim</option>
+                                        <option value="tamil nadu">Tamil Nadu</option>
+                                        <option value="telangana">Telangana</option>
+                                        <option value="tripura">Tripura</option>
+                                        <option value="uttar pradesh">Uttar Pradesh</option>
+                                        <option value="uttarakhand">Uttarakhand</option>
+                                        <option value="west bengal">West Bengal</option>
+                                        <option value="andaman and nicobar islands">Andaman and Nicobar Islands</option>
+                                        <option value="chandigarh">Chandigarh</option>
+                                        <option value="dadra and nagar haveli and daman and diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="lakshadweep">Lakshadweep</option>
+                                        <option value="puducherry">Puducherry</option>
+                                                                                    
+                                    </select>
+                                    <label for="district">State</label>
+                                </div>
                             </div>
-                            </div>
-                            </div>
-                        
-                        </form>
-                    </div>
+                            <div class="form-button  text-center">
+                                <p class="mainbtn ">
+                                  <button id="submit" type="submit"  class="btn-lg btn-primary calculatebutton">
+                                    Calculate BMI
+                               </button>
+                                </p>                         
+                                    </div>
+
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    
+                    </form>
                 </div>
             </div>
         </div>
+        </div>
+
     </div>
     <!-- Donate End -->
 

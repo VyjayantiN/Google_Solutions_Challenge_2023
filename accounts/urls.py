@@ -10,4 +10,5 @@ urlpatterns = [
     path('features', views.features),
     path('usermain',views.usermain,name='usermain'),
     path('items_home',views.items_home,name='items_home'),
+    path('mother',views.mother,name='mother'),
 ]
