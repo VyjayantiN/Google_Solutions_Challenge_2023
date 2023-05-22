@@ -4,7 +4,7 @@ from django.http import QueryDict
 import json
 from urllib.parse import unquote
 import urllib
-from .models import recipe,gen_ins
+from .models import recipe,gen_ins,mother_recipe,mother_ins
 # Create your views here.
 def home(request):
     return render(request,'accounts/home2.html')
@@ -35,27 +35,26 @@ def usermain(request):
                 category = "Healthy"
         else:
             category = "Unknown gender"
-        object_1=recipe.objects.filter(age=age)
+        object_1=recipe.objects.filter(district=district,age=age)
         object_2=gen_ins.objects.filter(age=age)
         for obj in object_2:
             return render(request,'accounts/usermain.html',{'obj1':object_1,'instructions':obj.instructions,'food_items':obj.food_items,'mal_instructions':obj.mal_ins,'category':category})
 
 def mother(request):
     if request.method=='POST':
+        age=request.POST['age']
         height=request.POST['height']
         weight=request.POST['weight']
-        age="2years-4years"
         district=request.POST['district']
         category=""
-        print(request.POST)
         bmi = int(weight) / ((int(height)/100) ** 2)
-        print(bmi)
         if bmi < 18.5:
             category = "Underweight"
         else:
-            category = "Healthy"        
-        object_1=recipe.objects.filter(age=age)
-        object_2=gen_ins.objects.filter(age=age)
+            category = "Healthy"       
+        print(district)
+        object_1=mother_recipe.objects.filter(district=district,age=age)
+        object_2=mother_ins.objects.filter(age=age)
         for obj in object_2:
             return render(request,'accounts/mother.html',{'obj1':object_1,'instructions':obj.instructions,'food_items':obj.food_items,'mal_instructions':obj.mal_ins,'category':category})
 
