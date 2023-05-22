@@ -69,3 +69,8 @@ def items_home(request):
     object_1=recipe.objects.filter(recipe_name=my_data)
     for obj in object_1:
         return render(request,'accounts/item.html',{'recipe_name':my_data,'ins':obj.ins})
+def mother_home(request):
+    my_data = request.GET.get('data', '')
+    object_1=mother_recipe.objects.filter(recipe_name=my_data)
+    for obj in object_1:
+        return render(request,'accounts/item.html',{'recipe_name':my_data,'ins':obj.ins})

@@ -10,5 +10,6 @@ urlpatterns = [
     path('features', views.features),
     path('usermain',views.usermain,name='usermain'),
     path('items_home',views.items_home,name='items_home'),
+    path('mother_home',views.mother_home,name='mother_home'),
     path('mother',views.mother,name='mother'),
 ]
