@@ -7,7 +7,7 @@ import urllib
 from .models import recipe,gen_ins,mother_recipe,mother_ins
 # Create your views here.
 def home(request):
-    return render(request,'accounts/home2.html')
+    return render(request,'accounts/index.html')
 def about(request):
     return render(request,'accounts/about2.html')
 def features(request):
