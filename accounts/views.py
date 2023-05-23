@@ -8,10 +8,15 @@ from .models import recipe,gen_ins,mother_recipe,mother_ins
 # Create your views here.
 def home(request):
     return render(request,'accounts/index.html')
+
 def about(request):
     return render(request,'accounts/about2.html')
 def features(request):
     return render(request,'accounts/features.html')
+def mother_bmi(request):
+    return render(request,'accounts/mother_bmi.html')
+def child_bmi(request):
+    return render(request,'accounts/child_bmi.html')
 def usermain(request):
     if request.method=='POST':
         height=request.POST['height']

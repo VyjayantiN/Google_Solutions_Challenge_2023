@@ -12,4 +12,6 @@ urlpatterns = [
     path('items_home',views.items_home,name='items_home'),
     path('mother_home',views.mother_home,name='mother_home'),
     path('mother',views.mother,name='mother'),
+    path('mother_bmi', views.mother_bmi),
+    path('child_bmi', views.child_bmi),
 ]
