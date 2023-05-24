@@ -208,8 +208,8 @@ header
 */
 
 .background-header {
-  background-color: #fff;
-  height: 80px!important;
+  background-color: #000;
+  height: 50px!important;
   position: fixed!important;
   top: 0px;
   left: 0px;
@@ -923,19 +923,22 @@ menu
 }
 
 .card1 {
-  background-image: url(../images/menu-item-01.jpg);
+  background-image: url(../images/post1.png);
 }
 .card2 {
-  background-image: url(../images/menu-item-02.jpg);
+  background-image: url(../images/post2.png);
 }
 .card3 {
-  background-image: url(../images/menu-item-03.jpg);
+  background-image: url(../images/post3.png);
 }
 .card4 {
-  background-image: url(../images/menu-item-04.jpg);
+  background-image: url(../images/post4.png);
 }
 .card5 {
-  background-image: url(../images/menu-item-05.jpg);
+  background-image: url(../images/post5.png);
+}
+.card6 {
+  background-image: url(../images/post6.png);
 }
 
 .info {
@@ -1535,7 +1538,7 @@ responsive
 @media (max-width: 992px) {
   #top {
     padding-top: 100px;
-    height: auto;
+    height: 1rem;
   }
   .header-area .main-nav .nav li.submenu:after {
     right: 3px;
