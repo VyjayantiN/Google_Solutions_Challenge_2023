@@ -17,6 +17,8 @@ def mother_bmi(request):
     return render(request,'accounts/mother_bmi.html')
 def child_bmi(request):
     return render(request,'accounts/child_bmi.html')
+def blog(request):
+    return render(request,'accounts/blog.html')
 def usermain(request):
     if request.method=='POST':
         height=request.POST['height']
@@ -79,3 +81,26 @@ def mother_home(request):
     object_1=mother_recipe.objects.filter(recipe_name=my_data)
     for obj in object_1:
         return render(request,'accounts/item.html',{'recipe_name':my_data,'ins':obj.ins})
+    
+
+def post1(request):
+    return render(request,'accounts/post1.html')
+def post2(request):
+    return render(request,'accounts/post2.html')
+def post3(request):
+    return render(request,'accounts/post3.html')
+def post4(request):
+    return render(request,'accounts/post4.html')
+def post5(request):
+    return render(request,'accounts/post5.html')
+def post6(request):
+    return render(request,'accounts/post6.html')
+
+def yoga1(request):
+    return render(request,'accounts/yoga1.html')
+def yoga2(request):
+    return render(request,'accounts/yoga2.html')
+def yoga3(request):
+    return render(request,'accounts/yoga3.html')
+def yoga4(request):
+    return render(request,'accounts/yoga4.html')
