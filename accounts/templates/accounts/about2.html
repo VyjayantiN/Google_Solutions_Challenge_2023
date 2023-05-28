@@ -1,45 +1,45 @@
 {% load static %}
+<!--#fb5849-->
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
+  <head>
+
+    <meta charset="utf-8" />
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement("google_element");
-        }
-    </script>
-    <title> Fight Famishment</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="static/images/food bowl.png" />
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+<script>
+    function loadGoogleTranslate() {
+        new google.translate.TranslateElement("google_element");
+    }
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Fight Famishment</title>
+<!--
     
-    <!-- Libraries Stylesheet -->
-    <link href=" {% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
-    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' &}" rel="stylesheet">
+TemplateMo 558 Klassy Cafe
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    
-    <!-- Template Stylesheet -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+https://templatemo.com/tm-558-klassy-cafe
+
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/templatemo-klassy-cafe.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
        .overlay {
   position: absolute;
@@ -97,36 +97,411 @@
 }
 
 
+/*Reservation fake */
+#reservations .section-heading {
+  margin-bottom: 30px;
+}
+
+#reservations .section-heading h6 {
+  color: #fff;
+}
+
+#reservations .section-heading h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#reservations .section-heading h6:before {
+  background-color: #fff;
+}
+
+#reservations p {
+  color: #000;
+}
+
+#reservations {
+  margin-top: 120px;
+  padding: 40px 0px;
+  background-image: url(static/images/reservation-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#reservations .phone,
+#reservations .message {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+#reservations .phone i,
+#reservations .message i {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  background-color: #fb5849;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-top: -35px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reservations .phone h4,
+#reservations .message h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#reservations .phone span a,
+#reservations .message span a {
+  font-size: 14px;
+  color: #fff;
+  transition: all .3s;
+}
+
+#reservations .phone span a:hover,
+#reservations .message span a:hover {
+  color: #fb5849;
+}
+
+#contact {
+  margin-left: 30px;
+  padding: 45px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#contact h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #2a2a2a;
+  margin-bottom: 30px;
+}
+
+.datepicker-days {
+  padding: 30px;
+  cursor: pointer;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  color: #2a2a2a;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+  outline: none;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #fb5849;
+}
+
+.contact-form button {
+  margin-top: -10px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #fb5849;
+  padding: 12px 25px;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.contact-form button:hover {
+  opacity: .9;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+  padding: 20px;
+}
+
+.contact-form ::-webkit-input-placeholder { /* Edge */
+  color: #2a2a2a;
+}
+
+.contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #2a2a2a;
+}
+
+.contact-form ::placeholder {
+  color: #2a2a2a;
+}
+
+
+
+
+
+
+
+
+
+footer a{
+color: aliceblue;
+}
+footer a:hover{
+color: black;
+text-decoration: underline;
+}
+
+.bgg-info{
+    margin-left: 7rem;
+}
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #fff;
+  background-color: #fb5849;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.footer address {
+  font-style: normal;
+  color: #f6d5d5;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #fff;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #fff;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #fff;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+
+
+
+
+
+
+
 
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid  px-0  pt-1  bg-dark wow fadeIn" data-wow-delay="0.1s" id= "google_element">
-        <nav class="navbar navbar-expand-lg navbar-warning py-lg-0 px-lg-5 wow fadeIn navbar-fixed" data-wow-delay="0.1s">
-            <a href="/" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold m-0 "><span style="color: #ff0f87;">Fight</span><span class="text-white">Famishment</span></h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="/" class="nav-item nav-link ">Home</a>
-                    <a href="about" class="nav-item nav-link active">About</a>
-                    <a href="features" class="nav-item nav-link">Features</a>
-                    <a href="/" class="nav-item nav-link">Get Started</a>
-                </div>
+  <header class="header-area header-sticky " >
+    <div class="container text-light "id= "google_element" >
+        <div class="row">
+            <div class="col-12 ">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="/" class="logo">
+                        <img src="static/images/FFlogo.png" align="klassy cafe html template">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="/" >Home</a></li>
+                        <li class="scroll-to-section"><a href="about" class="active">About</a></li>
+                        <li class="scroll-to-section" ><a href="blog">Blog</a></li>
+                        <li class="scroll-to-section"><a href="ourword">Our Word</a></li>
+                         <a href="/#reservation"><button type="button" class="btn btn-dark">Check BMI</button></a>
+                        
+                        <!-- ... -->
+                    </ul>
+                    <!-- ... -->
+                </nav>
             </div>
-        </nav>
+        </div>
     </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
   
 
           
+    <div class="container-fluid pt-5 mt-5">
+        <div class="container pt-5">
+          <div class="row g-5">
+            <div class="col-lg-5 pb-5 wow fadeInLeft" data-wow-delay="0.1s">
+              <div class="position-relative overflow-hidden" style="min-height: 400px;">
+                <img class="position-absolute animate__animated animate__fadeInLeft" src="static/images/hungr.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.5s">
+              <div class="h-100">
+                <h1 class="text-center display-6 fw-bold pt-3 fadeInLeft" style="color:#000">
+                  What inspired us?
+                </h1>
+                <div class="p-4 animate__animated animate__fadeInRight">
+                  <p class="text-dark fs-6" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    We are dedicated to fighting malnutrition in children under the age of five,
+                    particularly in rural areas. We prioritize offering affordable and accessible meal
+                    plans to ensure that these children receive the nutrition they need to thrive. We also
+                    assess mothers and provide them with nutritionally balanced foods and recipes that are
+                    locally available.
+                  </p>
+                  <p class="text-dark fs-6 pb-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    By promoting natural alternatives to artificial nutritious foods, we aim to instill healthy
+                    eating habits and give children the best possible start in life. Our mission is to eradicate
+                    malnutrition by making nutritious meals readily available and empowering mothers to make
+                    informed choices for their children's well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+ 
+
+    
+      
 
 
 
@@ -135,6 +510,90 @@
 
 
 
+
+
+
+
+
+    <section class="section" id="reservations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 align-self-center">
+                    <div class="left-text-content">
+                        <div class="section-heading text-center text-light ">
+                            <h1>OUR FEATURES</h1>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="phone">
+                                    <i class="fas fa-angle-down"></i>
+                                    <h5 class="fw-bold py-1">Assessment and Categorization</h5>
+                                  
+                                  <p class="text-left px-2">
+                                    Calculates BMI and classify individuals as underweight 
+                                    or healthy, providing valuable insights into their nutrition.
+                                    Gain a deeper understanding of your body's health and make informed decisions for overall well-being.
+
+
+
+
+                                </p>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="phone ">
+                                    <i class="fas fa-angle-down"></i>
+                                    <h4>Personalized Diet Plans</h4>
+                                    
+                                  
+                                    <p class="text-left px-2 py-3">
+                                        Offers tailored diet plans specifically designed for children and breastfeeding mothers,
+                                         ensuring they receive optimal 
+                                        nutrition to combat malnutrition and promote overall health. 
+</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="phone">
+                                    <i class="fas fa-angle-down"></i>
+                                    <h4>Child Health Chronicles</h4>
+                                   
+                                    <p class="text-left px-2 py-3">
+                                        Explores a wealth 
+                                        of informative articles covering various aspects of child health, including nutrition, growth 
+                                        milestones, immunity-boosting strategies,mental health and more. 
+                                  </p>
+                               
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="phone">
+                                    <i class="fas fa-angle-down "></i>
+                                    <h5 class="fw-bold py-1">
+                                        Yoga for Health and Well-being
+                                    </h5>
+                                  
+                                  <p class="text-left px-2">
+                                    Focuses on the benefits of yoga and excercising for children, mothers, and overall well-being,
+                                     offering practical 
+                                    guidance on incorporating excercises and yoga practises to support holistic health.
+
+
+
+
+                                </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
 
 
 
@@ -152,119 +611,91 @@
 
 
 
-    <div class="container-xxl py-5" >
-        <div class="container">
-            <h1 class="text-center display-5 pb-5" style="color: #ff0f87;">Our Team</h1>
-            <div class="row py-5">
-                <div class="col-3 pb-5 wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 325px;">
-                        <img class="position-absolute w-100 h-100" src="static/images/ridhima.png" alt="" style="object-fit: cover;">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h4>Ridhima</h4>
-                                <p>Interests - Data Science, DBMS</p>
-                                <a href="https://www.linkedin.com/in/ridhima-thakur02/" target="_blank" class="linkedin-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 pb-5 wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 325px;">
-                        <img class="position-absolute w-100 h-100" src="static/images/vyju.png" alt="" style="object-fit: cover;">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h4>Nandula Vyjayanti</h4>
-                                <p>Interests - ML, Web Development</p>
-                                <a href="https://www.linkedin.com/in/vyjayanti-nandula-8837b523a/" target="_blank" class="linkedin-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-3 pb-5 wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 325px;">
-                        <img class="position-absolute w-100 h-100" src="static/images/saranya.png" alt="" style="object-fit: cover;">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h4>Gummireddy Saranya</h4>
-                                <p>Interests - AI, Data Science</p>
-                                <a href="https://www.linkedin.com/in/g-saranya-00053322a" target="_blank" class="linkedin-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 pb-5 wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 325px;">
-                        <img class="position-absolute w-100 h-100" src="static/images/keerthana.png" alt="" style="object-fit: cover;">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h4>Keerthana Kadem</h4>
-                                <p>Interests - AI,
-                                    Data Science</p>
-                                    <a href="https://www.linkedin.com/in/keerthana-kadem-37624a254" target="_blank" class="linkedin-icon">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            
-        </div>
-    </div>
+    
 
 
-
-    <div class="container-fluid py-5" >
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5 pb-5  wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden " style="min-height: 400px;">
-                        <img class="position-absolute" src="static/images/carou1.png" alt="" >
-                    </div>
-                </div>
-                <div class="col-lg-7  pt-4   wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <h1 class=" text-center display-5" style=" color:#ff0f87">
-                           What inspired us?
-                         </h1>
-                        <div class=" p-4 ">
-                            <p class="text-dark  " style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                                We are dedicated to fighting
-                                 malnutrition in children under the age of five,
-                                  particularly in rural areas. We prioritize offering
-                                   affordable and accessible meal plans to ensure that 
-                                   these children receive the nutrition they need to thrive. 
-                                   We also assess mothers and provide them with nutritionally 
-                                   balanced foods and recipes that are locally available.
-                                </p>
-                                <p class="text-dark fs-6 pb-5" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-
-                                    By promoting natural alternatives to artificial nutritious
-                                     foods, we aim to instill healthy eating habits and give 
-                                     children the best possible start in life. Our mission is
-                                      to eradicate malnutrition by making nutritious meals readily
-                                       available and empowering mothers to make informed choices
-                                        for their children's well-being.  
-                                        </p>
-                                                                 
-                        </div>
-
-                        </a>
-                    </div>
+  <!-- ***** Chefs Area Starts ***** -->
+  <section class="section" id="chefs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 text-center">
+                <div class="section-heading">
+                    <h6>Our Team</h6>
+                    <h2>We aim to eradicate MALNUTRITION</h2>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="chef-item">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/ridhima-thakur02/"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+
+                        </ul>
+                        <img src="static/images/55.png" alt="Chef #1">
+                    </div>
+                    <div class="down-content">
+                        <h4>Ridhima Thakur</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chef-item pb-4">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/vyjayanti-nandula-8837b523a/"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/VyjayantiN"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <img src="static/images/49.png" alt="Chef #2">
+                    </div>
+                    <div class="down-content">
+                        <h4>Vyjayanti Nandula</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chef-item">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/keerthana-kadem-37624a254"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <img src="static/images/14.jpg" alt="Chef #3">
+                    </div>
+                    <div class="down-content">
+                        <h4>Keerthana Kadem</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="chef-item">
+                    <div class="thumb">
+                        <div class="overlay"></div>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/g-saranya-00053322a/"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <img src="static/images/11.png" alt="Chef #3">
+                    </div>
+                    <div class="down-content">
+                        <h4>Saranya Gummireddy</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
-
-
-
+</section>
+<!-- ***** Chefs Area Ends ***** -->
    
 
 
@@ -288,41 +719,60 @@
    
 
    <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <h1 class="fw-bold text-primary mb-4">Fight<span class="text-white">Famishment</span></h1>
-                <p>
-                    Fuel your body with healthy choices and leave malnutrition behind.
-                </p>
-
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-light mb-4">Address</h5>
-                <p><i class="fa fa-map-marker-alt me-3"></i>Hyderabad, India</p>
-                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-light mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="about">About Us</a>
-                <a class="btn btn-link" href="/">Home</a>
-                <a class="btn btn-link" href="features">Features</a>
-            </div>
-        </div>
+   <footer class="footer py-5">
+    <div class="footer__addr">
+      <h1 class="footer__logo">
+        <a href="/" class="logo">
+            <img src="static/images/FFlogo.png" align="klassy cafe html template">
+        </a>
+      </h1>
+      
+       <br>
+       
     </div>
-    <div class="container-fluid copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Fight Famishment</a>, All Right Reserved.
-                </div>
-
-            </div>
+    
+    <ul class="footer__nav ">
+      <li class="nav__item bgg-info">
+        <h2 class="nav__title">Quick Links</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="/">Home</a>
+          </li>
+  
+          <li>
+            <a href="about">About</a>
+          </li>
+              
+          <li>
+            <a href="ourword">Our Word</a>
+          </li>
+          <li>
+            <a href="blog">Blog</a>
+          </li>
+       
+          
+        </ul>
+      </li>
+      
+      <li class="nav__item ">
+        <h2 class="nav__title">Social Links</h2>
+        
+        <div class="right-text-content">
+           
+            <ul >
+              
+                <li><a href="https://www.linkedin.com/in/fight-famishment-2376a8278"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/fight_famishment/?igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          
         </div>
-    </div>
-</div>
+      </li>
+      
+     
+    </ul>
+   
+  </footer>
 <!-- Footer End -->
 
 
@@ -341,6 +791,10 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
