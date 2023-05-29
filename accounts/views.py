@@ -8,7 +8,8 @@ from .models import recipe,gen_ins,mother_recipe,mother_ins
 # Create your views here.
 def home(request):
     return render(request,'accounts/index.html')
-
+def ourword(request):
+    return render(request,'accounts/ourword.html')
 def about(request):
     return render(request,'accounts/about2.html')
 def features(request):

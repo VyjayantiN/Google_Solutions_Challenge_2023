@@ -25,4 +25,5 @@ urlpatterns = [
     path('yoga2',views.yoga2),
     path('yoga3',views.yoga3),
     path('yoga4',views.yoga4),
+    path('ourword',views.ourword),
 ]
