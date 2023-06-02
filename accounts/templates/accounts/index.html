@@ -205,6 +205,30 @@ text-decoration: underline;
 
 
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  background-color: #fb5849;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top i {
+  font-size: 20px;
+}
+
+.back-to-top:hover {
+  background-color: #ff8a7d; /* Change hover background color as desired */
+}
 
 
 
@@ -260,10 +284,6 @@ text-decoration: underline;
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-10  ">
-                                    <h1 class="display-3 text-white mb-5 fight animated slideInDown">
-                                        
-                                        LET US SEE A WORLD WITHOUT HUNGER
-                                    </h1>
                                  
                                     <a class="btn btn-light text-dark  px-3 mb-5 animated slideInDown" href="#reservation">
                                         Get Started
@@ -282,9 +302,7 @@ text-decoration: underline;
                         <div class="container py-0">
                             <div class="row justify-content-center py-0">
                                 <div class="col-lg-9 ">
-                                    <h1 class="display-2   text-white  fight mb-5 animated slideInDown">
-                                        FIGHT THE MALNUTRITION DEMON
-                                    </h1>
+                                  
                                
                                     <a class="btn btn-light text-dark mb-5 px-3 animated slideInDown" href="#checkbmi">
                                         Get Started
@@ -503,7 +521,9 @@ text-decoration: underline;
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="phone">
-                                    <i class="fas fa-angle-down"></i>
+                                  
+                                    <i class="fas fa-female"></i> <!-- Mother icon -->
+                                    
                                     <h4>Mother</h4>
                                     <img src="static/images/mother.png">
                                     <br><br>
@@ -515,7 +535,8 @@ text-decoration: underline;
                             </div>
                             <div class="col-lg-6">
                                 <div class="phone">
-                                    <i class="fas fa-angle-down"></i>
+                                    <i class="fas fa-baby"></i> <!-- Baby icon -->
+
                                     <h4>Child</h4>
                                     <img src="static/images/baby.png">
                                     <br><br>
@@ -684,7 +705,7 @@ text-decoration: underline;
           
          
         </ul>
-       
+        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
       </footer>
 
 
